@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Device Information </title>
+</head>
+<body>
+
+
+
+<div style="padding:20px; background-color:#1A05E2; border-radius:20px; "> 
+<h2 style="color:white;">Find Device</h2>
+
+ <input style="padding:10px; background:#0DD7E5; color:white" type="button" value=" Check Device" onclick="chk_agent();">
+
+ <script>
+  function chk_agent()
+  {
+   var UA = navigator.userAgent.toLowerCase();
+
+   if (UA.indexOf("android") > -1)
+   {
+    alert("This is Android Device");
+   }
+   else if (UA.indexOf("ipad") > -1)
+   {
+    alert("This is ipad Device");
+   }
+   else if (UA.indexOf("iphone") > -1)
+   {
+    alert("This is iphone Device");
+   }
+   else if (UA.indexOf("ipod") > -1)
+   {
+    alert("This is ipod Device");
+   }
+   else if (UA.indexOf("windows phone") > -1)
+   {
+    alert("This is windows phone");
+   }
+   else if (UA.indexOf("chrome") > -1)
+   {
+    alert("This is chrome browser");
+   }
+   else if (UA.indexOf("firefox") > -1)
+   {
+    alert("This is firefox browser");
+   }
+
+  }
+ </script>
+
+ </div>
+
+<br/>
+<br/>
+
+<div style="padding:20px; border-radius:20px; background:#E2057C; "> 
+
+<h2 style="color:white;">Device RAM Memory </h2>
+
+<button style='padding:10px; background:#2B25F9; ' type="button" onclick="getMemory();">Check RAM</button>
+
+ <script>
+  function getMemory()
+  {
+   var ramMemory = navigator.deviceMemory;
+   alert(ramMemory + "GB RAM memory");
+  }
+ </script>
+
+</div>
+
+<br/>
+<br/>
+
+
+<center>  <div style="padding:20px; background:#05E21C; width:200px; border-radius:100px;  font-size:20px; color:white; border:10px solid red;  ">
+
+<p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "রবিবার";
+    break;
+  case 1:
+    day = "সোমবার";
+    break;
+  case 2:
+    day = "মঙ্গলবার";
+    break;
+  case 3:
+    day = "বুধবার";
+    break;
+  case 4:
+    day = "বৃহস্পতিবার";
+    break;
+  case 5:
+    day = "শুক্রবার";
+    break;
+  case  6:
+    day = "শনিবার";
+}
+document.getElementById("demo").innerHTML = "  আজকে " + day;
+</script>
+
+
+</div> </center>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	
+body {
+ background-image: url("back2.png");
+ background-color: #cccccc;
+}
+  
+  button{
+  	background:#0DD7E5;
+  	color:white;
+  }
+
+</style>
+
+
+</body>
+</html>
